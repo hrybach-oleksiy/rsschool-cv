@@ -1,4 +1,121 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #bebebe;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    padding: 1em;
+    background-color: #d1d5d9;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    justify-content: center;
+    justify-items: center;
+    gap: 2em;
+}
+
+.menu__link {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu__link:hover {
+    color: rgb(160, 99, 99);
+}
+
+.main {
+    display: grid;
+    grid-template-areas:
+        "avatar avatar"
+        "contacts about"
+        "skills code"
+        "education education"
+        "experience english"
+    ;
+}
+
+.avatar {
+    grid-area: avatar;
+}
+
+.avatar__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.avatar__img {
+    width: 50%;
+}
+
+.avatar__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts {
+    grid-area: contacts;
+}
+
+.about {
+    grid-area: about;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.code {
+    grid-area: code;
+}
+
+.experience {
+    grid-area: experience;
+}
+
+.education {
+    grid-area: education;
+}
+
+.english {
+    grid-area: english;
 }
