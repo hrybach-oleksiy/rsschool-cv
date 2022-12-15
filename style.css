@@ -38,6 +38,10 @@ ul {
     margin: 0 auto;
 }
 
+.section-title {
+    color: rgb(37, 33, 33);
+}
+
 .header {
     width: 100%;
     padding: 1em;
@@ -57,7 +61,7 @@ ul {
     transition: color 0.3s ease-in-out;
 }
 
-.menu__link:hover {
+a:hover {
     color: rgb(160, 99, 99);
 }
 
@@ -70,6 +74,20 @@ ul {
         "education education"
         "experience english"
     ;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+section {
+    padding: 30px;
+    border: 1px solid #fbf8f8;
+    box-shadow: 14px 18px 20px -28px rgba(0, 0, 0, 0.74);
+}
+
+h1,
+h2 {
+    color: #000;
 }
 
 .avatar {
@@ -92,8 +110,26 @@ ul {
     justify-content: center;
 }
 
+.avatar__title {
+    font-size: 32px;
+}
+
+.avatar__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
 .contacts {
     grid-area: contacts;
+}
+
+.contacts__item {
+    color: #000;
+}
+
+.contacts__link {
+    color: #bebebe;
 }
 
 .about {
@@ -102,6 +138,10 @@ ul {
 
 .skills {
     grid-area: skills;
+}
+
+.skills__list {
+    list-style: disc;
 }
 
 .code {
@@ -116,6 +156,26 @@ ul {
     grid-area: education;
 }
 
+.education__list {
+    list-style: disc;
+}
+
 .english {
     grid-area: english;
+}
+
+.footer {
+    padding: 15px 0;
+    color: #fff;
+    background-color: #d1d5d9;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.footer__img {
+    width: 50px;
 }
