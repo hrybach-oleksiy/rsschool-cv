@@ -1,4 +1,181 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #bebebe;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: rgb(37, 33, 33);
+}
+
+.header {
+    width: 100%;
+    padding: 1em;
+    background-color: #d1d5d9;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    justify-content: center;
+    justify-items: center;
+    gap: 2em;
+}
+
+.menu__link {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: rgb(160, 99, 99);
+}
+
+.main {
+    display: grid;
+    grid-template-areas:
+        "avatar avatar"
+        "contacts about"
+        "skills code"
+        "education education"
+        "experience english"
+    ;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+section {
+    padding: 30px;
+    border: 1px solid #fbf8f8;
+    box-shadow: 14px 18px 20px -28px rgba(0, 0, 0, 0.74);
+}
+
+h1,
+h2 {
+    color: #000;
+}
+
+.avatar {
+    grid-area: avatar;
+}
+
+.avatar__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.avatar__img {
+    width: 50%;
+}
+
+.avatar__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar__title {
+    font-size: 32px;
+}
+
+.avatar__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.contacts {
+    grid-area: contacts;
+}
+
+.contacts__item {
+    color: #000;
+}
+
+.contacts__link {
+    color: #bebebe;
+}
+
+.about {
+    grid-area: about;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.skills__list {
+    list-style: disc;
+}
+
+.code {
+    grid-area: code;
+}
+
+.experience {
+    grid-area: experience;
+}
+
+.education {
+    grid-area: education;
+}
+
+.education__list {
+    list-style: disc;
+}
+
+.english {
+    grid-area: english;
+}
+
+.footer {
+    padding: 15px 0;
+    color: #fff;
+    background-color: #d1d5d9;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.footer__img {
+    width: 50px;
 }
